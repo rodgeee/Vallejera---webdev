@@ -1,0 +1,90 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}SHOES R US{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('styles/landingpage.css') }}">
+{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+   
+    <div class="top-bar">
+        FREE SHIPPING ON REGULAR ITEMS WITH MINIMUM SPEND OF PHP ₱15,000
+    </div> 
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <!-- Left Nav -->
+            <nav class="nav-left">
+                <a href="#">NEW ARRIVALS</a>
+                <a href="#">BRANDS</a>
+                <a href="#">FOOTWEAR</a>
+                <a href="#">APPAREL</a>
+                <a href="#">ACCESSORIES</a>
+                <a href="#">RELEASE</a>
+                <a href="#">SALE</a>
+            </nav>
+
+            <!-- Logo -->
+            <div class="nav-logo">
+                <img src="{{ asset('img/shoes-r-us-logo.png') }}" alt="Shoes R Us">
+            </div>
+
+            <!-- Right Nav -->
+            <div class="nav-right">
+                <a href="#">ACCOUNT</a>
+                <a href="#">SEARCH</a>
+                <a href="#">CART (0)</a>
+                <a href="#">♥</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section / Carousel -->
+    <section class="hero" data-controller="carousel" data-carousel-interval-value="5000">
+        <div class="slides">
+            <div class="slide is-active" data-carousel-target="slide" style="background-image: url('{{ asset('img/hero_img_1.png') }}');"></div>
+            <div class="slide" data-carousel-target="slide" style="background-image: url('{{ asset('img/hero_img_2.png') }}');"></div>
+            <div class="slide" data-carousel-target="slide" style="background-image: url('{{ asset('img/hero_img_2.png') }}');"></div>
+            <div class="slide" data-carousel-target="slide" style="background-image: url('{{ asset('img/hero_img_3.png') }}');"></div>
+            <div class="slide" data-carousel-target="slide" style="background-image: url('{{ asset('img/hero_img_4.png') }}');"></div>
+        </div>
+
+        <div class="hero-captions">
+            <div class="hero-text is-active" data-carousel-target="caption">
+                <p class="small">Available now</p>
+                <h1>adidas Wales Boner Sambas x Shoes R Us</h1>
+            </div>
+            <div class="hero-text" data-carousel-target="caption">
+                <p class="small">Brand story</p>
+                <h1>Shoes R Us — Your Sneaker Destination</h1>
+            </div>
+            <div class="hero-text" data-carousel-target="caption">
+                <p class="small">New collection</p>
+                <h1>Nike Seasonal Drops</h1>
+            </div>
+            <div class="hero-text" data-carousel-target="caption">
+                <p class="small">Trending</p>
+                <h1>Streetwear Essentials</h1>
+            </div>
+            <div class="hero-text" data-carousel-target="caption">
+                <p class="small">Sale</p>
+                <h1>Up to 40% Off Selected Styles</h1>
+            </div>
+        </div>
+
+        <div class="carousel-dots">
+            <span class="dot active" data-carousel-target="dot" data-index="0" data-action="click->carousel#go"></span>
+            <span class="dot" data-carousel-target="dot" data-index="1" data-action="click->carousel#go"></span>
+            <span class="dot" data-carousel-target="dot" data-index="2" data-action="click->carousel#go"></span>
+            <span class="dot" data-carousel-target="dot" data-index="3" data-action="click->carousel#go"></span>
+            <span class="dot" data-carousel-target="dot" data-index="4" data-action="click->carousel#go"></span>
+        </div>
+    </section>
+{% endblock %}

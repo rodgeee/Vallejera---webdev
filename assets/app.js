@@ -1,4 +1,7 @@
 import './bootstrap.js';
+import '/dash/board.js';
+
+
 /*
  * Welcome to your app's main JavaScript file!
  *

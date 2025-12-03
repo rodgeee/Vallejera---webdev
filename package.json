@@ -1,0 +1,28 @@
+{
+  "name": "srusytem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "encore dev-server",
+    "build": "encore production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodgeee/Vallejera---webdev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodgeee/Vallejera---webdev/issues"
+  },
+  "homepage": "https://github.com/rodgeee/Vallejera---webdev#readme",
+  "devDependencies": {
+    "@symfony/webpack-encore": "^1.1.0"
+  }
+}
